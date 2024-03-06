@@ -1,0 +1,238 @@
+.smallCardContainer {
+  display: grid;
+  margin: 1.8rem 0.6rem;
+}
+.item {
+  width: 18.5vw;
+}
+.item:hover {
+  cursor: pointer;
+}
+.details {
+  display: grid;
+  justify-content: flex-start;
+  text-align: left;
+}
+.name {
+  text-decoration: none;
+}
+.prices {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: fit-content;
+}
+.price {
+  display: grid;
+  margin-right: 1rem;
+}
+.hide {
+  display: none;
+}
+.imageAndAttributes {
+  position: relative;
+}
+.sale {
+  position: absolute;
+  z-index: 10;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.3rem 0.7rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px #585858;
+}
+.bag,
+.bagContainer {
+  z-index: 10;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.bag {
+  width: 1rem;
+  opacity: 0.5;
+}
+.bagContainer {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  top: 0.8rem;
+  right: 1rem;
+  background: #fff;
+  display: none;
+}
+.imageAndAttributes:hover {
+  cursor: pointer;
+}
+
+.addToCart {
+  position: absolute;
+  z-index: 10;
+  top: 0.3rem;
+  right: 2.5rem;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  width: fit-content;
+  display: none;
+}
+.triangle {
+  position: absolute;
+  z-index: 10;
+  top: 0.3rem;
+  right: 2rem;
+  display: none;
+}
+
+@media screen and (min-width: 133px) {
+  .imageAndAttributes:hover .bagContainer {
+    display: grid;
+  }
+  .bagContainer:hover .addToCart,
+  .bagContainer:hover .triangle {
+    display: grid;
+  }
+  .bagContainer:hover .addToCart {
+    width: 5.5rem;
+  }
+  .bagContainer:hover .bag {
+    opacity: 1;
+  }
+}
+
+.details .type {
+  color: #9c9ea2;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+.details .name {
+  color: #2b2f38;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 450;
+}
+.price {
+  color: #abadb0;
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 1200px) {
+  .item {
+    width: 20vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .item {
+    width: 22vw;
+  }
+}
+@media screen and (max-width: 1005px) {
+  .item {
+    width: 23vw;
+  }
+  .sale {
+    padding: 0.3rem 0.5rem;
+    left: 0.5rem;
+  }
+  .addToCart {
+    padding: 0.3rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .item {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .item {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .item {
+    width: 46vw;
+  }
+  .smallCardContainer {
+    margin: 1.8rem 0.3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .smallCardContainer {
+    margin: 2rem 1.8rem;
+  }
+  .item {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 283px) {
+  .smallCardContainer {
+    margin: 1.8rem 0.5rem;
+  }
+  .item {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 230px) {
+  .item {
+    width: 95vw;
+  }
+  .smallCardContainer {
+    margin: 1.8rem 0;
+  }
+  .sale {
+    top: 0.5rem;
+  }
+
+  .bagContainer {
+    top: 3rem;
+  }
+}
+@media screen and (max-width: 180px) {
+  .prices {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sale {
+    top: 0.2rem;
+    left: 0.2rem;
+  }
+  .bagContainer {
+    top: 2.2rem;
+    right: 0.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .addToCart {
+    padding: 0.1rem;
+    right: 2rem;
+    word-break: break-all;
+  }
+  .triangle {
+    right: 1.6rem;
+  }
+  .item {
+    width: 100vw;
+  }
+  .type {
+    font-size: 12px;
+  }
+  .details .name {
+    font-size: 12px;
+  }
+  .prices {
+    font-size: 12px;
+  }
+  .sale {
+    padding: 0.1rem;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 132px) {
+  .bagContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,193 @@
+.horizontalDescription,
+.largeCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 0 9.3vw;
+}
+.largeCards {
+  margin-top: 3rem;
+}
+.featuredPlants {
+  display: grid;
+  margin: 25vh 0;
+  justify-content: center;
+  text-align: center;
+}
+.featuresHeading {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+.smallCardItems {
+  display: grid;
+  padding: 3rem 0;
+  grid-template-columns: repeat(4, auto);
+}
+.featuresPara {
+  color: #5d617e;
+  font-size: 15px;
+}
+.askForHelp {
+  margin: 0 9.3vw;
+}
+.testimonial {
+  padding: 7rem 10rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonialHeading {
+  position: absolute;
+  top: 6rem;
+  font-size: 40px;
+  font-weight: 500;
+  color: #2b2f38;
+}
+.testimonialPara {
+  position: absolute;
+  top: 170px;
+  color: #5d6167;
+  font-size: 15px;
+}
+.allUserTestimonial {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.leftView {
+  margin-top: 190px;
+}
+@media screen and (max-width: 1200px) {
+  .horizontalDescription {
+    padding: 0 5vw;
+  }
+  .testimonial {
+    padding: 7rem 5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .testimonial {
+    padding: 7rem 2rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .featuredPlants {
+    margin: 20vh 0;
+  }
+  .smallCardItems {
+    grid-template-columns: repeat(3, auto);
+  }
+  .askForHelp {
+    margin: 0 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .allUserTestimonial {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .largeCards {
+    padding: 0 5vw;
+  }
+}
+@media screen and (max-width: 770px) {
+  .largeCards {
+    padding: 0 3vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .smallCardItems {
+    grid-template-columns: repeat(2, auto);
+  }
+  .featuresHeading {
+    font-size: 30px;
+  }
+  .featuresPara {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .horizontalDescription {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .smallCardItems {
+    grid-template-columns: 1fr;
+  }
+  .featuresHeading {
+    font-size: 25px;
+  }
+  .askForHelp {
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .largeCards {
+    grid-template-columns: 1fr;
+  }
+  .largeCards {
+    padding: 0;
+  }
+  .testimonial {
+    padding: 7rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 337px) {
+  .horizontalDescription {
+    grid-template-columns: 1fr;
+  }
+  .largeCards {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .testimonialHeading {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 220px) {
+  .testimonialHeading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 180px) {
+  .featuresHeading {
+    font-size: 16px;
+  }
+  .askForHelp {
+    margin: 0 1rem;
+  }
+  .testimonialHeading {
+    font-size: 20px;
+  }
+  .testimonialPara {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 150px) {
+  .askForHelp {
+    margin: 0;
+  }
+  .testimonialHeading {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 110px) {
+  .testimonial {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+  .testimonialHeading {
+    font-size: 14px;
+  }
+  .testimonialPara {
+    font-size: 12px;
+  }
+}

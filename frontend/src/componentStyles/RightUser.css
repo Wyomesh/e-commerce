@@ -1,0 +1,51 @@
+.userRightSide {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-bottom: 50px;
+}
+.userRightSide img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+/* userDetails,userMessage,userName,userJobTitle
+
+--> styling of above items are done in LeftUser.css as all these names collide width RigthUser.js file
+*/
+@media screen and (max-width: 410px) {
+  .userRightSide img {
+    width: 150px;
+    height: 210px;
+  }
+}
+@media screen and (max-width: 337px) {
+  .userRightSide {
+    grid-template-columns: 1fr;
+  }
+  .userRightSide img {
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 170px) {
+  .userRightSide img {
+    width: 100px;
+    height: 140px;
+  }
+}
+@media screen and (max-width: 105px) {
+  .userRightSide img {
+    width: 50px;
+    height: 70px;
+  }
+  .userRightSide {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 60px) {
+  .userRightSide img {
+    width: 40px;
+    height: 56px;
+  }
+}

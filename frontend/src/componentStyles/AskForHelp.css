@@ -1,0 +1,102 @@
+.contactForHelpContainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 3rem 0 7rem 0;
+}
+.contactForHelp {
+  padding-right: 5rem;
+  width: 30vw;
+  position: relative;
+}
+.helpHeading {
+  font-size: 25px;
+  font-weight: 500;
+  color: #2b2f38;
+}
+.linkForHelp {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1px;
+}
+.helpLink {
+  color: #fc5f5f;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  padding: 2px;
+  font-weight: 600;
+}
+.fa-phone {
+  color: #fc5f5f;
+  padding: 2px;
+  font-size: 12px;
+  transform: rotate(-90deg);
+}
+.contactForHelpDescription {
+  display: grid;
+  font-size: 15px;
+  color: #5d6167;
+}
+.firstPara {
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 430px) {
+  .helpHeading {
+    font-size: 20px;
+  }
+  .contactForHelpDescription {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .contactForHelpContainer {
+    grid-template-columns: 1fr;
+  }
+  .contactForHelp {
+    padding: 0;
+    width: 90vw;
+  }
+  .linkForHelp {
+    position: static;
+    padding: 0.5rem 0;
+  }
+}
+@media screen and (max-width: 180px) {
+  .helpHeading {
+    font-size: 17px;
+  }
+  .contactForHelpDescription {
+    font-size: 11px;
+  }
+  .helpLink,
+  .fa-phone {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 150px) {
+  .linkForHelp {
+    margin: 0;
+    padding: 0;
+  }
+  .helpHeading {
+    font-size: 15px;
+  }
+  .helpLink,
+  .fa-phone {
+    font-size: 8px;
+  }
+  .helpLink {
+    line-height: 2px;
+  }
+  .contactForHelpDescription {
+    word-break: break-all;
+    width: 90vw;
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+  }
+  .contactForHelp {
+    width: 94vw;
+  }
+}

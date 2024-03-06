@@ -1,0 +1,157 @@
+.navContainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 14px 9.3vw;
+}
+.site-title {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: fit-content;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+.site-title img {
+  margin: 0 15px;
+}
+.logoImage {
+  width: 50px;
+}
+.user {
+  width: 20px;
+}
+.cart {
+  width: 20px;
+}
+.navItems {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+.navItems a {
+  text-decoration: none;
+  margin: 0 16px;
+}
+.cartAndUser {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: fit-content;
+  align-items: center;
+  justify-self: center;
+}
+.cartAndUser img {
+  margin: 0 5px;
+}
+a.active {
+  color: #fc5f5f;
+}
+.itemsCount {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  background: #fc5f5f;
+  border-radius: 50%;
+  padding: 0 6px;
+  font-size: 14px;
+}
+.hamburgerBtn {
+  display: none;
+  padding: 0 2px;
+}
+
+@media screen and (max-width: 1200px) {
+  .navContainer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .cartAndUser {
+    justify-self: flex-end;
+    grid-template-columns: repeat(3, auto);
+  }
+  .navLinks {
+    display: none;
+  }
+  .show {
+    display: grid;
+  }
+  .hide {
+    display: none;
+  }
+  .hamburgerBtn {
+    display: grid;
+  }
+  .showLinks {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .logoImage {
+    width: 30px;
+  }
+  .site-title p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 255px) {
+  .logoImage {
+    width: 20px;
+  }
+  .site-title p {
+    font-size: 14px;
+  }
+  .cart,
+  .user,
+  .hamburgerBtn img {
+    width: 16px;
+  }
+  .itemsCount {
+    font-size: 12px;
+    padding: 0 3px;
+  }
+}
+@media screen and (max-width: 210px) {
+  .hamburgerBtn {
+    padding: 2px 0;
+  }
+  .cartAndUser {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 160px) {
+  .logoImage {
+    width: 15px;
+  }
+  .site-title p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 145px) {
+  .site-title {
+    grid-template-columns: 1fr;
+  }
+  .showLinks {
+    background: #fff;
+  }
+}
+@media screen and (max-width: 98px) {
+  .logoImage {
+    display: none;
+  }
+
+  * {
+    word-break: break-all;
+  }
+}
+@media screen and (max-width: 67px) {
+  .itemsCount {
+    display: none;
+  }
+}

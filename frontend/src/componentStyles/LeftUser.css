@@ -1,0 +1,83 @@
+.userLeftSide {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-bottom: 50px;
+}
+.userLeftSide img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.userDetails {
+  padding: 2rem;
+  display: grid;
+  align-self: center;
+}
+.userMessage {
+  color: #5d6167;
+  font-size: 15px;
+}
+.userName {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #2b2f38;
+}
+.userJobTitle {
+  font-size: 12px;
+  color: #5d6167;
+}
+@media screen and (max-width: 410px) {
+  .userDetails {
+    padding: 0.5rem;
+  }
+  .userLeftSide img {
+    width: 150px;
+    height: 210px;
+  }
+}
+@media screen and (max-width: 337px) {
+  .userLeftSide {
+    grid-template-columns: 1fr;
+  }
+  .userLeftSide img {
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 170px) {
+  .userLeftSide img {
+    width: 100px;
+    height: 140px;
+  }
+  .userName {
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+  .userMessage {
+    font-size: 14px;
+  }
+  .userJobTitle {
+    font-size: 10px;
+  }
+  .userDetails {
+    padding: 0.5rem 0;
+  }
+}
+@media screen and (max-width: 105px) {
+  .userLeftSide img {
+    width: 50px;
+    height: 70px;
+  }
+  .userLeftSide {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 60px) {
+  .userLeftSide img {
+    width: 40px;
+    height: 56px;
+  }
+}

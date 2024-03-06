@@ -1,0 +1,9 @@
+.header {
+  background: url("https://websitedemos.net/plant-store-02/wp-content/uploads/sites/410/2020/07/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 1.4rem;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}

@@ -1,0 +1,87 @@
+.shoppingCards {
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 1.5rem;
+  display: grid;
+  background-color: #efeef4;
+  border-radius: 15px;
+  height: 80vh;
+}
+.content {
+  display: grid;
+  align-content: flex-end;
+  padding: 3rem;
+}
+.content h3 {
+  color: #2b2f38;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0.5rem 0;
+}
+.content p {
+  color: #5d6167;
+  font-size: 15px;
+}
+.content a {
+  color: #fc5f5f;
+  width: fit-content;
+  margin: 1.5rem 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 520;
+}
+@media screen and (max-width: 870px) {
+  .shoppingCards {
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .shoppingCards {
+    margin: 0 0.5rem;
+    height: 72vh;
+  }
+  .content {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shoppingCards {
+    height: 60vh;
+  }
+  .content {
+    padding: 1rem;
+  }
+  .content h3 {
+    font-size: 16px;
+  }
+  .content p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .shoppingCards {
+    margin: 0.5rem;
+  }
+  .content a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 152px) {
+  .shoppingCards {
+    margin: 0.5rem 0;
+    min-height: fit-content;
+  }
+}
+@media screen and (max-width: 136px) {
+  .content {
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+  .shoppingCards {
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+}

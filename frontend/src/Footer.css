@@ -1,0 +1,190 @@
+.preFooter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5rem 10rem;
+  justify-items: center;
+}
+.footerLogo {
+  width: 95px;
+  display: grid;
+  justify-self: center;
+}
+.footerSiteName {
+  font-size: 24px;
+  font-weight: 650;
+  color: #4d6167;
+  text-transform: capitalize;
+  margin: 1.5rem 0;
+}
+.social {
+  display: grid;
+  padding-right: 1rem;
+  height: fit-content;
+}
+.socialLinkContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.socialLink {
+  text-align: center;
+  margin: 0 0.3rem;
+  padding: 0.3rem 0.5rem;
+  color: #fff;
+  background: #4e5768;
+}
+.quickLinksDiv,
+.importantLinksDiv {
+  display: grid;
+  height: fit-content;
+  justify-self: flex-start;
+  padding-right: 1rem;
+}
+.quickLinksContainer,
+.importantLinksContainer {
+  display: grid;
+}
+.quickLinkHeading,
+.importantLinkHeading,
+.getInTouchHeading {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #2b2f38;
+  margin-bottom: 0.8rem;
+}
+.quickLink,
+.importantLink,
+.getInTouchPara {
+  text-decoration: none;
+  font-size: 15px;
+  color: #4d6167;
+  padding: 1px 0;
+}
+
+.quickLink,
+.importantLink,
+.getInTouchPara::first-letter {
+  text-transform: capitalize;
+}
+.quickLink .getInTouch {
+  display: grid;
+  height: fit-content;
+}
+
+.copyright {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 16vh;
+  margin: 0 10vw;
+  align-items: center;
+  color: #4d6167;
+  font-size: 15px;
+}
+.poweredPara {
+  display: grid;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 1200px) {
+  .preFooter {
+    padding: 5rem;
+  }
+  .footerLogo {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .preFooter {
+    padding: 5rem 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footerLogo {
+    justify-self: flex-start;
+  }
+  .footerSiteName {
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .preFooter {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem 0.5rem;
+  }
+  .socialLinkContainer,
+  .quickLinksContainer,
+  .importantLinksContainer {
+    margin-bottom: 3.5rem;
+  }
+  .social {
+    justify-self: flex-start;
+  }
+  .copyright {
+    margin: 0 5vw;
+  }
+  .copyrightPara {
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .preFooter {
+    grid-template-columns: 1fr;
+  }
+  .copyright {
+    grid-template-columns: 1fr;
+    margin: 0;
+    height: fit-content;
+  }
+  .copyrightPara,
+  .poweredPara {
+    justify-self: center;
+    margin: 1.5rem 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 200px) {
+  .socialLinkContainer {
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+  .socialLink {
+    margin-bottom: 1rem;
+  }
+  .quickLinkHeading,
+  .importantLinkHeading,
+  .getInTouchHeading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 125px) {
+  .footerLogo {
+    width: 30px;
+  }
+  .footerSiteName {
+    font-size: 18px;
+  }
+  .quickLinksDiv,
+  .social {
+    padding-right: 0;
+  }
+  .quickLink,
+  .importantLink,
+  .getInTouchPara {
+    font-size: 12px;
+  }
+  .quickLinkHeading,
+  .importantLinkHeading,
+  .getInTouchHeading,
+  .footerSiteName {
+    font-size: 15px;
+  }
+  .preFooter {
+    padding: 5rem 0;
+  }
+  .socialLinkContainer {
+    grid-template-columns: 1fr;
+  }
+}

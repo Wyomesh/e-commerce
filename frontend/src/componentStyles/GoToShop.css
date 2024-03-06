@@ -1,0 +1,89 @@
+.goToShopContainer {
+  height: 100vh;
+  background: url(https://websitedemos.net/plant-store-02/wp-content/uploads/sites/410/2020/07/CTA-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: grid;
+}
+.goToShopContents {
+  display: grid;
+  width: 50vw;
+  justify-self: center;
+  margin-top: 5rem;
+  height: fit-content;
+  text-align: center;
+}
+.goToShopHeading {
+  display: grid;
+  justify-self: center;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #2b2f38;
+  padding: 0 5vw;
+  line-height: 3.2rem;
+}
+.goToShopPara {
+  display: grid;
+  align-self: flex-start;
+  padding: 1.5rem 0;
+}
+.goToShopLink {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.7rem 2.5rem;
+  background: #fc5f5f;
+  width: fit-content;
+  display: grid;
+  justify-self: center;
+  text-transform: capitalize;
+  border-radius: 33px;
+  margin-top: 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+@media screen and (max-width: 470px) {
+  .goToShopHeading {
+    padding: 0 3vw;
+  }
+  .goToShopContents {
+    width: 100vw;
+  }
+  .goToShopHeading {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .goToShopHeading {
+    padding: 0 1.5rem;
+  }
+  .goToShopPara {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .goToShopHeading {
+    font-size: 26px;
+    line-height: 2rem;
+  }
+  .goToShopLink {
+    font-size: 12px;
+    padding: 0.7rem 1.5rem;
+  }
+}
+@media screen and (max-width: 200px) {
+  .goToShopHeading {
+    font-size: 22px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 130px) {
+  .goToShopHeading {
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+  .goToShopLink {
+    padding: 0.5rem 1rem;
+  }
+}
